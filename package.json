@@ -1,0 +1,85 @@
+{
+  "name": "cph-leetcode-extension-by-vijay",
+  "displayName": "CPH leetcode extension by vijay",
+  "description": "test case fetcher and tester extension",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onCommand:cph-leetcode-extension-by-vijay.runTests",
+    "onCommand:cph-leetcode-extension-by-vijay.fetchTestCases",
+    "onCommand:cph-leetcode-extension-by-vijay.addManualTest"
+  ],
+  "main": "./dist/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "cph-leetcode-extension-by-vijay.fetchTestCases",
+        "title": "CPH: Fetch LeetCode Test Cases"
+      },
+      {
+        "command": "cph-leetcode-extension-by-vijay.runTests",
+        "title": "CPH: Run Test Cases"
+      },
+      {
+        "command": "cph-leetcode-extension-by-vijay.addManualTest",
+        "title": "CPH: Add Manual Test Case"
+      }
+    ],
+    "configuration": {
+      "title": "CPH LeetCode Helper",
+      "properties": {
+        "cphLeetcodeHelper.languages": {
+          "type": "object",
+          "default": {
+            "python": {
+              "compile": "",
+              "run": "python \"{file}\""
+            },
+            "cpp": {
+              "compile": "g++ -std=c++17 {file} -o {fileNoExt}",
+              "run": "./{fileNoExt}"
+            }
+          },
+          "description": "Language-specific compilation and run commands"
+        }
+      }
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run package",
+    "compile": "npm run check-types && npm run lint && node esbuild.js",
+    "watch": "npm-run-all -p watch:*",
+    "watch:esbuild": "node esbuild.js --watch",
+    "watch:tsc": "tsc --noEmit --watch --project tsconfig.json",
+    "package": "npm run check-types && npm run lint && node esbuild.js --production && vsce package",
+    "build": "npm run check-types && npm run lint && node esbuild.js --production",
+    "compile-tests": "tsc -p . --outDir out",
+    "watch-tests": "tsc -p . -w --outDir out",
+    "pretest": "npm run compile-tests && npm run compile && npm run lint",
+    "check-types": "tsc --noEmit",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.96.0",
+    "@typescript-eslint/eslint-plugin": "^8.17.0",
+    "@typescript-eslint/parser": "^8.17.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "esbuild": "^0.24.0",
+    "eslint": "^9.16.0",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.7.2",
+    "vscode": "^1.96.0"
+  },
+  "dependencies": {
+    "puppeteer": "^21.11.0"
+  }
+}
