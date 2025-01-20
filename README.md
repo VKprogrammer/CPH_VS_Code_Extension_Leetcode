@@ -81,7 +81,7 @@ The extension provides three main commands:
    - Displays formatted results
 ## Requirements
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+Just save the complete directory try to avoid the path with spaces , open the directory in vs code run the command "npm install" it will install a folder named node_modules which is necessary to run and working of the extension
 
 ## Extension Settings
 
