@@ -1,4 +1,4 @@
-# cph-leetcode-extension-by-vijay 
+# CPH-leetcode-extension-by-vijay 
 
 This is the README for our extension "cph-leetcode-extension-by-vijay". 
 
