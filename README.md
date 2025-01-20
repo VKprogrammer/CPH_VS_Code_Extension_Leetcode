@@ -1,4 +1,4 @@
-# cph-leetcode-extension-by-vijay README
+# cph-leetcode-extension-by-vijay 
 
 This is the README for our extension "cph-leetcode-extension-by-vijay". 
 
@@ -146,20 +146,7 @@ The extension provides three main commands:
   - Expected output
   - Actual output (for failed tests)
   - Error messages (if any)
-## Extension Settings
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
-
-For example:
-
-This extension contributes the following settings:
-
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
 
 ## Release Notes
 
