@@ -2,7 +2,7 @@
 
 This is the README for our extension "cph-leetcode-extension-by-vijay". 
 
-## Features and Uses
+## Features
 
 ### Core Features
 
