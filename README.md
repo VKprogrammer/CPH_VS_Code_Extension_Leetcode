@@ -2,13 +2,7 @@
 
 This is the README for our extension "cph-leetcode-extension-by-vijay". 
 
-## Features
-
-For example if there is an image subfolder under your extension project workspace:
-
-\!\[feature X\]\(images/feature-x.png\)
-
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+## Features and Uses
 
 ## Requirements
 
