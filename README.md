@@ -79,9 +79,7 @@ The extension provides three main commands:
    - Executes tests for the current solution
    - Automatically saves file before running
    - Displays formatted results
-## Requirements
 
-Just save the complete directory try to avoid the path with spaces , open the directory in vs code run the command "npm install" it will install a folder named node_modules which is necessary to run and working of the extension
 ## User Guide
 
 # CPH LeetCode Extension - User Guide
