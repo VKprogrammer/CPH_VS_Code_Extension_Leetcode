@@ -82,7 +82,72 @@ The extension provides three main commands:
 ## Requirements
 
 Just save the complete directory try to avoid the path with spaces , open the directory in vs code run the command "npm install" it will install a folder named node_modules which is necessary to run and working of the extension
+## User Guide
 
+# CPH LeetCode Extension - User Guide
+
+## Installation
+
+1. Download the extension package (`.vsix` file)
+2. Create a directory for your LeetCode solutions without any spaces in the path
+   - ✅ Good path: `/Users/username/leetcode-solutions`
+   - ❌ Avoid: `/Users/username/leetcode solutions`
+3. Open this directory in VS Code
+4. Install the required dependencies:
+   ```bash
+   npm install
+   ```
+   This will create a `node_modules` folder necessary for the extension to work.
+
+## Using the Extension
+
+### Fetching Test Cases
+1. Open the Command Palette (Ctrl/Cmd + Shift + P)
+2. Type and select `CPH LeetCode: Fetch Test Cases`
+3. Enter the LeetCode problem URL when prompted
+4. Choose your preferred language (C++, Python, or Both)
+5. The extension will fetch test cases and create necessary files
+
+### Adding Manual Test Cases
+1. Open your solution file (.cpp or .py)
+2. Open the Command Palette
+3. Select `CPH LeetCode: Add Manual Test`
+4. Enter:
+   - Test inputs (comma-separated for multiple inputs)
+   - Expected output
+5. The test results will appear in a new window
+
+### Running Tests
+1. Open your solution file
+2. Open the Command Palette
+3. Select `CPH LeetCode: Run Tests`
+4. View the test results in the side panel showing:
+   - Overall test summary
+   - Individual test case results
+   - Execution time
+   - Input/Output comparison for failed tests
+
+## Supported Languages
+
+### Python
+- File extension: `.py`
+- Automatically runs with Python 3
+- No compilation needed
+
+### C++
+- File extension: `.cpp`
+- Compiles with g++ using C++17 standard
+- Automatic compilation and execution
+
+## Test Results Format
+- Summary of passed/total tests
+- For each test case:
+  - Status (✅ Passed or ❌ Failed)
+  - Execution time
+  - Input values
+  - Expected output
+  - Actual output (for failed tests)
+  - Error messages (if any)
 ## Extension Settings
 
 Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
