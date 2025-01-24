@@ -114,6 +114,8 @@ The extension provides three main commands:
    - Test inputs (comma-separated for multiple inputs)
    - Expected output
 5. The test results will appear in a new window
+(This time we have some issues with Adding Manual Test Cases it is not parsing inputs correctly so instead of it we can create the files of the test cases which we want to run mannualy that will be the same thing but for more user friendly i tried to make the Mannual command so it will need to create the test files all time and i will fix this very soon)
+
 
 ### Running Tests
 1. Open your solution file
